@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home1"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/upload"
+        android:icon="@drawable/baseline_upload_file_24"
+        android:title="Drive Upload"/>
+    <item
+        android:id="@+id/report"
+        android:icon="@drawable/baseline_report_24"
+        android:title="Report"/>
+    <item
+        android:id="@+id/bot_logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Logout"/>
+
+</menu>

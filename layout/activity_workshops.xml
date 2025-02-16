@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Workshops">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomAppBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ImageView for Hackathon banner -->
+            <ImageView
+                android:id="@+id/image_Workshop"
+                android:layout_width="match_parent"
+                android:layout_height="411dp"
+                android:src="@drawable/workshops" />
+
+            <!-- TextView to display the link -->
+            <TextView
+                android:id="@+id/linkTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:elevation="4dp"
+                tools:text="Event Link: https://example.com" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request"
+                android:layout_gravity="center"
+                android:id="@+id/request_but5"
+                android:onClick="onRequestClick"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BottomAppBar -->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        tools:ignore="BottomAppBar">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_gradient">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@color/purple_200"
+            android:layout_marginTop="33dp"
+            android:text="Events"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Hackathon CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="64dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hackathon1" />
+
+                <TextView
+                    android:id="@+id/icon1_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hackathon"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ideathon CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="52dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toEndOf="@id/card1"
+            app:layout_constraintTop_toTopOf="@id/card1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ideathon" />
+
+                <TextView
+                    android:id="@+id/icon2_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ideathon"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Orion CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="64dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/orion" />
+
+                <TextView
+                    android:id="@+id/icon3_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orion"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Mini Orion CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="52dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toEndOf="@id/card3"
+            app:layout_constraintTop_toTopOf="@id/card3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="139dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/icon4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mini" />
+
+                <TextView
+                    android:id="@+id/icon4_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Mini Orion"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coding Contest CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="64dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card4">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/coding_contest" />
+
+                <TextView
+                    android:id="@+id/icon5_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coding Contest"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Workshops CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="52dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toEndOf="@id/card5"
+            app:layout_constraintTop_toTopOf="@id/card5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="139dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/icon6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/workshops" />
+
+                <TextView
+                    android:id="@+id/icon6_label"
+                    android:layout_width="84dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="WorkShops"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame_layout">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                app:fabCradleMargin="10dp"
+                app:fabCradleRoundedCornerRadius="50dp"
+                tools:ignore="BottomAppBar,MissingConstraints">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomNavigationView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/bottom_menu" />
+            </com.google.android.material.bottomappbar.BottomAppBar>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

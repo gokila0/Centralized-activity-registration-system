@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/ad_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/acc_bot"
+        android:icon="@drawable/baseline_verified_24"
+        android:title="Accepted"/>
+    <item
+        android:id="@+id/drive_up"
+        android:icon="@drawable/baseline_upload_file_24"
+        android:title="Upload"/>
+
+    <item
+        android:id="@+id/bot_users"
+        android:icon="@drawable/baseline_people_24"
+        android:title="Users"/>
+    <item
+        android:id="@+id/bot1_logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Logout"/>
+
+</menu>

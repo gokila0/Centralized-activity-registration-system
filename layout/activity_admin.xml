@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Activity"
+    android:background="@drawable/background_gradient">
+
+    <!-- ScrollView for event TextViews -->
+    <ScrollView
+        android:id="@+id/eventScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomAppBar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!-- Event 1: Hackathon -->
+            <TextView
+                android:id="@+id/event_Hackathon1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Hackathon"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textAlignment="center"
+                android:hint="Hackathon: Enter link"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true" />
+
+            <Button
+                android:id="@+id/sendButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Link"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Link"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/requestsListLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requests List"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/requestsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="10dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Repeat similar sections for the other 5 events -->
+
+            <!-- Event 2: Ideathon -->
+            <TextView
+                android:id="@+id/event_Ideathon1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Ideathon"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Ideathon: Enter link"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true" />
+
+            <Button
+                android:id="@+id/sendButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Link"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Link"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/requestsListLabel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requests List"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/requestsListView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Event 3: Orion -->
+            <TextView
+                android:id="@+id/event_Orion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Orion"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Orion: Enter link"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true" />
+
+            <Button
+                android:id="@+id/sendButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Link"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Link"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/requestsListLabel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requests List"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/requestsListView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="10dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Event 4: Mini Orion -->
+            <TextView
+                android:id="@+id/event_MiniOrion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Mini Orion"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Mini Orion: Enter link"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true" />
+
+            <Button
+                android:id="@+id/sendButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Link"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Link"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/requestsListLabel4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requests List"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/requestsListView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="10dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Event 5: Contest -->
+            <TextView
+                android:id="@+id/event_Contest1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Contest"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Contest: Enter link"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true" />
+
+            <Button
+                android:id="@+id/sendButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Link"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Link"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/requestsListLabel5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requests List"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/requestsListView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="10dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Event 6: Workshops -->
+            <TextView
+                android:id="@+id/event_Workshops1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Workshops"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventTextView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Workshops: Enter link"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true" />
+
+            <Button
+                android:id="@+id/sendButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Link"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Link"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/requestsListLabel6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requests List"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/requestsListView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="10dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BottomAppBar -->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="403dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="BottomAppBar,MissingConstraints"
+        tools:layout_editor_absoluteX="8dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/admin_navigation" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
